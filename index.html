@@ -10,10 +10,12 @@
     <body>
         <div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="http://blog-mno2.csie.org">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="http://blog.mno2.org">Blog</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#publication">Publication</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
@@ -34,13 +36,13 @@
              </svg>
          </div>
 
-        <div class="content">
+        <div id="portfolio" class="content">
             <div class="pure-g-r content-ribbon" data-1200="transform:scale(0) rotate(0deg);" data-1500="transform:scale(1) rotate(360deg);opacity:1;" data-1600="">
                 <div class="pure-u-2-3">
                     <div class="l-box">
-                        <h4 class="content-subhead">Some small text</h4>
+                        <h4 class="content-subhead">TMonad</h4>
 
-                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <h3>a Haskell implementation of L7 cache server</h3>
                         <p>
                             Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet lobortis nulla pharetra.
                         </p>
@@ -49,8 +51,7 @@
 
                 <div class="pure-u-1-3">
                     <div class="l-box">
-                        <img src="http://placehold.it/400x250"
-                             alt="Placeholder image for example.">
+                        <img src="images/tmonad-logo-w400-h250.png" alt="tmonad logo">
                     </div>
                 </div>
             </div>
@@ -58,16 +59,15 @@
             <div class="pure-g-r content-ribbon" data-1500="transform:scale(0) rotate(0deg);" data-1800="transform:scale(1) rotate(360deg); opacity:1;" data-1900="">
                 <div class="pure-u-1-3">
                     <div class="l-box">
-                        <img src="http://placehold.it/400x250"
-                             alt="Placeholder image for example.">
+                        <img src="images/pulse-audio-logo.pnG" alt="Placeholder image for example." width="400px">
                     </div>
                 </div>
 
                 <div class="pure-u-2-3">
                     <div class="l-box">
-                        <h4 class="content-subhead">Some more small text</h4>
+                        <h4 class="content-subhead">Pulse</h4>
 
-                        <h3>Etiam iaculis iaculis lobortis.</h3>
+                        <h3>a Haskell binding to PulseAudio</h3>
                         <p>
                             Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi fermentum dui sit amet libero tincidunt rutrum. Nam sodales consequat metus sed accumsan.
                         </p>
@@ -78,7 +78,7 @@
             <div class="pure-g-r content-ribbon" data-1800="transform:scale(0) rotate(0deg);" data-2100="transform:scale(1) rotate(360deg); opacity:1;" data-2200="">
                 <div class="pure-u-2-3">
                     <div class="l-box">
-                        <h4 class="content-subhead">Some small text</h4>
+                        <h4 class="content-subhead">Encoding Mashup Server</h4>
 
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <p>
@@ -89,8 +89,7 @@
 
                 <div class="pure-u-1-3">
                     <div class="l-box">
-                        <img src="http://placehold.it/400x250"
-                             alt="Placeholder image for example.">
+                        <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
                     </div>
                 </div>
             </div>
@@ -98,14 +97,13 @@
             <div class="pure-g-r content-ribbon" data-2100="transform:scale(0) rotate(0deg);" data-2400="transform:scale(1) rotate(360deg); opacity:1;" data-2500="">
                 <div class="pure-u-1-3">
                     <div class="l-box">
-                        <img src="http://placehold.it/400x250"
-                             alt="Placeholder image for example.">
+                        <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
                     </div>
                 </div>
 
                 <div class="pure-u-2-3">
                     <div class="l-box">
-                        <h4 class="content-subhead">Some more small text</h4>
+                        <h4 class="content-subhead"></h4>
 
                         <h3>Etiam iaculis iaculis lobortis.</h3>
                         <p>
@@ -115,8 +113,108 @@
                 </div>
             </div>
         </div> <!-- end content -->
+        
+	<div id="publication" class="content">
+            <div class="pure-g-r content-ribbon" data-1200="transform:scale(0) rotate(0deg);" data-1500="transform:scale(1) rotate(360deg);opacity:1;" data-1600="">
+                <div class="pure-u-2-3">
+                    <div class="l-box">
+                        <h4 class="content-subhead">Learn you a Haskell for Great Good -- Chinese Translation</h4>
 
-        <div class="information pure-g-r">
+                        <h3>Chinese translation of famous introduction material: "Learn you a Haskell for great good". Mainly co-worked with <a href="https://github.com/FleureR">Fleuria</a></h3>
+                        <p>
+                            Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet lobortis nulla pharetra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <div class="l-box">
+                        <img src="images/lyah-bird.png" height="250px" alt="lyah book">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-g-r content-ribbon" data-2100="transform:scale(0) rotate(0deg);" data-2400="transform:scale(1) rotate(360deg); opacity:1;" data-2500="">
+                <div class="pure-u-1-3">
+                    <div class="l-box">
+                        <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
+                    </div>
+                </div>
+
+                <div class="pure-u-2-3">
+                    <div class="l-box">
+                        <h4 class="content-subhead">AN INITIAL ATTEMPT FOR PHONEME RECOGNITION USING STRUCTURED SUPPORT VECTOR MACHINE (SVM)</h4>
+
+                        <h3>Etiam iaculis iaculis lobortis.</h3>
+                        <p>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi fermentum dui sit amet libero tincidunt rutrum. Nam sodales consequat metus sed accumsan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-g-r content-ribbon" data-1200="transform:scale(0) rotate(0deg);" data-1500="transform:scale(1) rotate(360deg);opacity:1;" data-1600="">
+                <div class="pure-u-2-3">
+                    <div class="l-box">
+                        <h4 class="content-subhead">IMPROVED LATTICE-BASED SPOKEN DOCUMENT RETRIEVAL BY DIRECTLY LEARNING FROM THE EVALUATION MEASURES</h4>
+
+                        <h3>Chinese translation of famous introduction material: "Learn you a Haskell for great good". Mainly co-worked with <a href="https://github.com/FleureR">Fleuria</a></h3>
+                        <p>
+                            Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet lobortis nulla pharetra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <div class="l-box">
+                        <img src="images/lyah-bird.png" height="250px" alt="lyah book">
+                    </div>
+                </div>
+            </div>
+	</div>
+
+	<div id="talks" class="content">
+            <div class="pure-g-r content-ribbon" data-1200="transform:scale(0) rotate(0deg);" data-1500="transform:scale(1) rotate(360deg);opacity:1;" data-1600="">
+                <div class="pure-u-2-3">
+                    <div class="l-box">
+                        <h4 class="content-subhead">Introduction to SPDY</h4>
+
+                        <h3>Chinese translation of famous introduction material: "Learn you a Haskell for great good". Mainly co-worked with <a href="https://github.com/FleureR">Fleuria</a></h3>
+                        <p>
+                            Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet lobortis nulla pharetra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <div class="l-box">
+                        <img src="images/lyah-bird.png" height="250px" alt="lyah book">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-g-r content-ribbon" data-2100="transform:scale(0) rotate(0deg);" data-2400="transform:scale(1) rotate(360deg); opacity:1;" data-2500="">
+                <div class="pure-u-1-3">
+                    <div class="l-box">
+                        <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
+                    </div>
+                </div>
+
+                <div class="pure-u-2-3">
+                    <div class="l-box">
+                        <h4 class="content-subhead">Introduction to Haskell</h4>
+
+                        <h3>Etiam iaculis iaculis lobortis.</h3>
+                        <p>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi fermentum dui sit amet libero tincidunt rutrum. Nam sodales consequat metus sed accumsan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+	</div>
+
+
+        <div id="contact" class="information pure-g-r">
             <div class="pure-u-1-2">
                 <div class="l-box">
                 </div>
@@ -127,6 +225,7 @@
                     <h3>About Me</h3>
                     <ul>
                         <li>I specialize in Haskell, PHP</li>
+                        <li>I am familiar with Speech Processing and Infromation Retrieval</li>
                     </ul>
                 </div>
             </div>
@@ -138,23 +237,22 @@
                 <div class="l-box sample-buttons">
                     <h3>You can find me on.</h3>
                     <p>
-                    <button class="pure-button">Github</button>
-                    <button class="pure-button pure-button-a">Twitter</button>
+                    <a href="https://github.com/MnO2"><button class="pure-button">Github</button></a>
+                    <a href="https://twitter.com/MnO2XMnO2"><button class="pure-button pure-button-a">Twitter</button></a>
                     <a href="http://www.linkedin.com/pub/chao-hong-meng/11/91/892"><button class="pure-button pure-button-b">Linkedin</button></a>
                     </p>
                     <p>
-                    <button class="pure-button pure-button-c">Facebook</button>
-                    <button class="pure-button pure-button-d">Google+</button>
-                    <button class="pure-button pure-button-e">Blog</button>
+                    <a href="https://www.facebook.com/Paul.Meng"><button class="pure-button pure-button-c">Facebook</button></a>
+                    <a href="https://plus.google.com/103925382602424793947/posts"><button class="pure-button pure-button-d">Google+</button></a>
+                    <a href="http://blog.mno2.org/"><button class="pure-button pure-button-e">Blog</button></a>
                     </p>
                 </div>
             </div>
         </div> <!-- end information -->
 
-
         <div class="footer">
             <p class="l-box">
-                <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
+		This site is made with <a href="http://purecss.io">Pure</a>
             </p>
         </div>
     </body>
