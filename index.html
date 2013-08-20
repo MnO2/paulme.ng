@@ -267,8 +267,12 @@
     </body>
     <script type="text/javascript" src="javascripts/skrollr.min.js"></script>
     <script type="text/javascript">
-    skrollr.init({
-        forceHeight: false
-    });
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            //ugly userAgent detection
+        } else {
+            skrollr.init({
+                forceHeight: false
+            });
+        }
     </script>
 </html>
