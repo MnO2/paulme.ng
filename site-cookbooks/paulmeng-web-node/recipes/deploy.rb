@@ -5,9 +5,9 @@ deploy_revision 'home.mno2.org' do
     symlinks.clear
     repo 'https://github.com/MnO2/home.mno2.org.git'
     revision 'HEAD'
-    group 'www'
-    user 'www'
-    deploy_to '/mnt/deploy/www'
+    group 'www-data'
+    user 'www-data'
+    deploy_to '/mnt/deploy/www-data'
     action :deploy
     scm_provider Chef::Provider::Git
 end
