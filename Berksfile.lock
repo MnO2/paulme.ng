@@ -1,0 +1,33 @@
+DEPENDENCIES
+  build-essential
+  mno2-base-cookbook
+    path: site-cookbooks/mno2-base-cookbook
+  monit
+    git: git://github.com/apsoto/monit.git
+    revision: ac3793f37d4f7ca7e4174cfa9a64f8b6948fff44
+  paulmeng-web-node
+    path: site-cookbooks/paulmeng-web-node
+  spf13-vim
+    git: git://github.com/BrandKarma/spf13-vim-cookbook.git
+    revision: 801ce182474c0a4b8edbeb0ac14d51a0ee14194c
+  supervisor
+    git: git://github.com/poise/supervisor.git
+    revision: a95a11bc39656a76780b94c348e9ccac56ed9088
+
+GRAPH
+  build-essential (2.2.3)
+  mno2-base-cookbook (0.1.0)
+  monit (0.7.5)
+  paulmeng-web-node (0.1.0)
+    mno2-base-cookbook (>= 0.0.0)
+    monit (>= 0.0.0)
+    supervisor (>= 0.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  spf13-vim (0.1.0)
+  supervisor (0.4.12)
+    python (>= 0.0.0)
+  yum (3.6.1)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
