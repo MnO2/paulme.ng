@@ -5,16 +5,7 @@ user 'mno2' do
   shell '/usr/bin/fish'
 end
 
-user 'www' do
-  action :create
-  system true
-  shell '/bin/bash'
-end
-
-group 'www' do
-  action :create
-  members 'www'
-end
+package 'nginx'
 
 group 'sudo' do
   action :modify
@@ -25,16 +16,15 @@ end
 include_recipe 'mno2-base-cookbook'
 include_recipe 'supervisor'
 
-package 'nginx'
 
 directory "/mnt/deploy/www" do
-    owner 'www'
-    group 'www'
+    owner 'www-data'
+    group 'www-data'
     mode 00755
     action :create
     recursive true
     not_if do
-        File.directory?('/mnt/deploy/www')
+        File.directory?('/mnt/deploy/www-data')
     end
 end
 
@@ -45,9 +35,9 @@ deploy_revision 'home.mno2.org' do
     symlinks.clear
     repo 'https://github.com/MnO2/home.mno2.org.git'
     revision 'HEAD'
-    group 'www'
-    user 'www'
-    deploy_to '/mnt/deploy/www'
+    group 'www-data'
+    user 'www-data'
+    deploy_to '/mnt/deploy/www-data'
     action :deploy
     scm_provider Chef::Provider::Git
 end
