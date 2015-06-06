@@ -19,13 +19,3 @@ node[:circos_utils][:ubuntu_packages].each do |package_name|
     package "#{package_name}"
 end
 
-user "ubuntu" do
-    shell "/usr/bin/fish"
-end
-
-
-# install aws cli
-execute "pip install awscli"
-
-
-include_recipe 'spf13-vim::default'

@@ -21,6 +21,7 @@ GRAPH
   paulmeng-web-node (0.1.0)
     mno2-base-cookbook (>= 0.0.0)
     monit (>= 0.0.0)
+    spf13-vim (>= 0.0.0)
     supervisor (>= 0.0.0)
   python (1.4.6)
     build-essential (>= 0.0.0)

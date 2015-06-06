@@ -1,19 +1,13 @@
-inlcude_recipe 'mno2-base-cookbook'
-include_recipe 'supervisor'
-
-package 'nginx'
-
 user 'mno2' do
   action :create
   system true
-  gid ['sudo', 'user']
+  home '/home/mno2'
   shell '/usr/bin/fish'
 end
 
 user 'www' do
   action :create
   system true
-  gid ['user']
   shell '/bin/bash'
 end
 
@@ -21,6 +15,17 @@ group 'www' do
   action :create
   members 'www'
 end
+
+group 'sudo' do
+  action :modify
+  members 'mno2'
+  append true
+end
+
+include_recipe 'mno2-base-cookbook'
+include_recipe 'supervisor'
+
+package 'nginx'
 
 directory "/mnt/deploy/www" do
     owner 'www'
@@ -42,7 +47,7 @@ deploy_revision 'home.mno2.org' do
     revision 'HEAD'
     group 'www'
     user 'www'
-    deploy_to '/mnt/deploy/'
+    deploy_to '/mnt/deploy/www'
     action :deploy
     scm_provider Chef::Provider::Git
 end
