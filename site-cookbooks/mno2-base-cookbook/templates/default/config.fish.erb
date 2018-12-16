@@ -1,7 +1,0 @@
-function api_db
-	mysql -hapidb.cnp3gshzbn3m.us-east-1.rds.amazonaws.com -P63306 --user=circos --database=apidb
-end
-
-function bk_db
-    psql  --user <%= @bk_db_user %> --host <%= @bk_db_host %> <%= @bk_db_database %>
-end

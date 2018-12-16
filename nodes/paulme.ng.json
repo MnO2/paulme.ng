@@ -1,8 +1,0 @@
-{
-  "run_list": [
-      "recipe[paulmeng-web-node::default]"
-  ],
-  "automatic": {
-    "ipaddress": "paulme.ng"
-  }
-}
