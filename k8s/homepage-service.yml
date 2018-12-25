@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: homepage 
+spec:
+  type: "LoadBalancer"
+  ports:
+  - name: "http"
+    port: 80
+    targetPort: 80
+  selector:
+    name: homepage 
