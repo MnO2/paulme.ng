@@ -8,11 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - www.paulme.ng
     - paulme.ng
     secretName: letsencrypt-prod
   rules:
-  - host: www.paulme.ng
+  - host: paulme.ng
     http:
       paths:
       - backend:
