@@ -9,9 +9,23 @@ spec:
   tls:
   - hosts:
     - paulme.ng
+    - haskell.tw
+    - haskell.sg
     secretName: letsencrypt-prod
   rules:
   - host: paulme.ng
+    http:
+      paths:
+      - backend:
+          serviceName: homepage
+          servicePort: 80
+  - host: haskell.sg 
+    http:
+      paths:
+      - backend:
+          serviceName: homepage
+          servicePort: 80
+  - host: haskell.tw 
     http:
       paths:
       - backend:
