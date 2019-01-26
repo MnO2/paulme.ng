@@ -8,19 +8,18 @@
         <link rel="amphtml" href="https://paulme.ng">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="google-site-verification" content="AhCspkSlkxfv5A28XyOOTijnA59_q-V8rJzKakb4CFA" />
+	<meta name="google-site-verification" content="AhCspkSlkxfv5A28XyOOTijnA59_q-V8rJzKakb4CFA" />
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       
         <meta property="og:title" content="Paul Meng" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://paulme.ng" />
-        <meta property="og:image" content="https://paulme.ng/images/paul-meng.png" />
         
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-        <link rel="stylesheet" href="https://paulme.ng/stylesheets/pure-skin-mine.css">
-        <link rel="stylesheet" href="https://paulme.ng/stylesheets/customize.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+        <link rel="stylesheet" href="./stylesheets/pure-skin-mine.css">
+        <link rel="stylesheet" href="./stylesheets/customize.css">
 
         <script type="application/ld+json">
         {
@@ -40,9 +39,9 @@
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
                 <li class="pure-menu-item"><a href="http://blog.paulme.ng" class="pure-menu-link">Blog</a></li>
-                <li class="pure-menu-item"><a href="#about-me" class="pure-menu-link">About Me</a></li>
                 <li class="pure-menu-item"><a href="https://github.com/MnO2" class="pure-menu-link">Github</a></li>
                 <li class="pure-menu-item"><a href="https://sg.linkedin.com/in/paul-meng-89209111" class="pure-menu-link">Linkedin</a></li>
+                <li class="pure-menu-item"><a href="#about-me" class="pure-menu-link">About</a></li>
             </ul>
         </div>
 
@@ -54,11 +53,11 @@
             </div>
 
             <div id="about-me" class="content">
+	        <h2 class="content-head is-center">About Me</h2>
                 <div class="pure-g">
                     <div class="pure-u-md-1-5"></div>
                     <div class="pure-u-1 pure-u-md-3-5">
                         <div class="slot-content">
-                            <h4 class="content-subhead">About Me</h4>
                             <li>I am a full-stack hacker hacking on anything
                               interested to me. I have done academic research on
                               speech processing but not limited to that. I built
@@ -73,6 +72,21 @@
             </div>
 
             <div id="portfolio" class="content">
+	        <h2 class="content-head is-center">Open Source Projects</h2>
+                <div class="pure-g">
+                    <div class="pure-u-md-1-5"></div>
+                    <div class="pure-u-1 pure-u-md-3-5">
+                        <div class="slot-content">
+                            <a href=""><h4 class="content-subhead">calljj</h4></a>
+
+                            <h3>Esoteric Language</h3>
+                            <p>calljj is an esoteric language after the Grass language, with different symbols in use</p>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pure-u-md-1-5"></div>
+                </div>
                 <div class="pure-g">
                     <div class="pure-u-md-1-5"></div>
                     <div class="pure-u-1 pure-u-md-3-5">
@@ -100,16 +114,47 @@
                     </div>
                     <div class="pure-u-md-1-5"></div>
                 </div>
-            </div> <!-- end content -->
-        
-            <div id="publication" class="content">
+
                 <div class="pure-g">
                     <div class="pure-u-md-1-5"></div>
                     <div class="pure-u-1 pure-u-md-3-5">
                         <div class="slot-content">
-                            <a href="http://learnyouahaskell-zh-tw.csie.org/"><h4 class="content-subhead">Learn you a Haskell for Great Good -- Chinese Translation</h4></a>
+                            <a href="https://github.com/MnO2/hopencc"><h4 class="content-subhead">hopencc</h4></a>
 
-                            <h3>Chinese translation of famous introduction material: "Learn you a Haskell for great good". Mainly co-worked with <a href="https://github.com/FleureR">Fleuria</a></h3>
+                            <h3>Haskell binding for libopencc</h3>
+			    <p>libopencc is a library to translate between traditional Chinese and simplified Chinese</p>
+                        </div>
+                    </div>
+                    <div class="pure-u-md-1-5"></div>
+                </div>
+            </div> <!-- end content -->
+        
+            <div id="publication" class="content">
+	        <h2 class="content-head is-center">Talks</h2>
+                <div class="pure-g">
+                    <div class="pure-u-md-1-5"></div>
+                    <div class="pure-u-1 pure-u-md-3-5">
+                        <div class="slot-content">
+				<ul>
+					<li><a href="http://mno2.github.io/slides/derived/atom-plugin-in-haskell.html">Atom plugin in Haskell</a></li>
+					<li><a href="http://mno2.github.io/slides/derived/neovim-plugin-in-haskell.html">Neovim plugin in Haskell</a></li>
+					<li><a href="http://mno2.github.io/slides/derived/free-monad-refactoring.html">Refactoring with Free Monad</a></li>
+					<li><a href="http://mno2.github.io/slides/derived/free-monad-refactoring.html">Introduction to Hindley Milner Type Inference</a></li>
+				</ul>
+                        </div>
+                    </div>
+                    <div class="pure-u-md-1-5"></div>
+                </div>
+            </div>
+
+            <div id="publication" class="content">
+	        <h2 class="content-head is-center">Books</h4>
+                <div class="pure-g">
+                    <div class="pure-u-md-1-5"></div>
+                    <div class="pure-u-1 pure-u-md-3-5">
+                        <div class="slot-content">
+                            <a href="http://learnyouahaskell-zh-tw.csie.org/"><h4 class="content-subhead">Learn you a Haskell for Great Good Chinese Edition</h4></a>
+
                             <p>The Haskell learning resource in Chinese is very few as the time of 2011. As one of the initiators of #haskell.tw channel on freenode. I took over the unfinished first eight chapters translation from Fleuria, and continued to translate the last six chapters. The translation is licensed by CC-BY-SA-NC. The work has been viewed by thousands of people.
                             </p>
                         </div>
