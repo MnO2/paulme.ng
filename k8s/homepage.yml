@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: homepage
-        image: paulmeng/homepage:v1.0.1
+        image: paulmeng/homepage:v1.0.2
         imagePullPolicy: Always
         ports:
         - containerPort: 5678
