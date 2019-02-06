@@ -1,3 +1,6 @@
-# MnO2’s website
+# Paul’s website
 
 ## Deployment
+```
+kubectl apply -f homepage.yml
+```
