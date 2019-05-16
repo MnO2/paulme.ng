@@ -18,14 +18,14 @@ spec:
     http:
       paths:
       - backend:
-          servicename: blog 
-          serviceport: 80
+          serviceName: blog 
+          servicePort: 80
   - host: paulme.ng
     http:
       paths:
       - backend:
-          servicename: homepage
-          serviceport: 80
+          serviceName: homepage
+          servicePort: 80
   - host: haskell.sg 
     http:
       paths:
