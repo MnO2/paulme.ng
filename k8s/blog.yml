@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: blog
-        image: paulmeng/blog:v1.0.8
+        image: paulmeng/blog:v1.0.9
         imagePullPolicy: Always
         ports:
         - containerPort: 5678
