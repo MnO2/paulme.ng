@@ -9,6 +9,7 @@ spec:
   tls:
   - hosts:
     - blog.paulme.ng
+    - analytics.paulme.ng
     - paulme.ng
     - haskell.tw
     - haskell.sg
@@ -20,6 +21,12 @@ spec:
       - backend:
           serviceName: blog 
           servicePort: 80
+  - host: analytics.paulme.ng
+    http:
+      paths:
+      - backend:
+          serviceName: fathom 
+          servicePort: 8080
   - host: paulme.ng
     http:
       paths:
