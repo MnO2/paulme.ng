@@ -17,7 +17,7 @@ spec:
   selector:
     matchLabels:
       app: homepage 
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
