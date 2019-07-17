@@ -85,15 +85,5 @@ postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
-authorCtx :: HaspotSetting -> Context a
-authorCtx conf = field "author_name" ( \item -> do
-                      metadata <- getMetadata $ itemIdentifier item
-                      return $ name $ author conf
-                      ) `mappend`
-                 field "author_intro" ( \item -> do
-                      metadata <- getMetadata $ itemIdentifier item
-                      return $ intro $ author conf
-                      )
-
 pandocOptions :: WriterOptions
 pandocOptions = defaultHakyllWriterOptions
